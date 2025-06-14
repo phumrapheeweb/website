@@ -724,4 +724,21 @@
                 width: 95%;
             }
         }
-    
+    /* CSS for งานแอร์ service card */
+.service-card:nth-child(4) .service-icon {
+    background: linear-gradient(135deg, #00bcd4, #0097a7);
+}
+
+.service-card:nth-child(4) .service-icon i {
+    color: white;
+}
+
+.service-card:nth-child(4):hover .service-icon {
+    background: linear-gradient(135deg, #0097a7, #00838f);
+    transform: scale(1.1);
+}
+
+/* Alternative approach if you want to target by content */
+.service-card:has(h3:contains("งานแอร์")) .service-icon {
+    background: linear-gradient(135deg, #00bcd4, #0097a7);
+}
